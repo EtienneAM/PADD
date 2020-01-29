@@ -1058,10 +1058,10 @@ NormalPADD() {
     GetSystemInformation ${padd_size}
 
     # Sleep for 5 seconds, then clear the screen
-    sudo ./bl_control.py
+    ./bl_control.py
     sleep 5
     clear
-    sudo pkill -9 -f ./bl_control.py
+    pkill -9 -f ./bl_control.py
   done
 }
 
