@@ -1031,7 +1031,7 @@ StartupRoutine(){
 
 NormalPADD() {
   for (( ; ; )); do
-
+    sudo bl_control.py
     console_width=$(tput cols)
     console_height=$(tput lines)
 
@@ -1061,6 +1061,7 @@ NormalPADD() {
     # Sleep for 5 seconds, then clear the screen
     sleep 5
     clear
+    sudo pkill -9 -f bl_control.py
   done
 }
 
