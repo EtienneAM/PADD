@@ -1031,7 +1031,7 @@ StartupRoutine(){
 
 NormalPADD() {
   for (( ; ; )); do
-    sudo bl_control.py
+    sudo ./bl_control.py
     console_width=$(tput cols)
     console_height=$(tput lines)
 
