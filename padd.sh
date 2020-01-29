@@ -1061,6 +1061,7 @@ NormalPADD() {
     # Sleep for 5 seconds, then clear the screen
     sleep 5
     clear
+    sleep 2
   done
 }
 
